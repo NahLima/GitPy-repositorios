@@ -1,0 +1,104 @@
+{
+    "assets": {
+      "forkids.PNG": {
+        "path": "/Edlaine-Pontes/Forkids/blob/main/assets/forkids.PNG",
+        "row_count": null,
+        "byte_count": 24600.0
+      },
+      "inicio.png": {
+        "path": "/Edlaine-Pontes/Forkids/blob/main/assets/inicio.png",
+        "row_count": null,
+        "byte_count": 1640000.0
+      },
+      "meio.jpg": {
+        "path": "/Edlaine-Pontes/Forkids/blob/main/assets/meio.jpg",
+        "row_count": null,
+        "byte_count": 194000.0
+      }
+    },
+    "src": {
+      "configs": {
+        "database.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/configs/database.js",
+          "row_count": 16,
+          "byte_count": 393.0
+        }
+      },
+      "controllers": {
+        "comentarioController.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/controllers/comentarioController.js",
+          "row_count": 69,
+          "byte_count": 1740.0
+        },
+        "estabelecimentoController.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/controllers/estabelecimentoController.js",
+          "row_count": 106,
+          "byte_count": 2680.0
+        }
+      },
+      "models": {
+        "comentarioSchema.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/models/comentarioSchema.js",
+          "row_count": 22,
+          "byte_count": 511.0
+        },
+        "estabelcimentoSchema.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/models/estabelcimentoSchema.js",
+          "row_count": 54,
+          "byte_count": 1020.0
+        }
+      },
+      "routes": {
+        "comentarioRoute.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/routes/comentarioRoute.js",
+          "row_count": 11,
+          "byte_count": 343.0
+        },
+        "estabelecimentoRoutes.js": {
+          "path": "/Edlaine-Pontes/Forkids/blob/main/src/routes/estabelecimentoRoutes.js",
+          "row_count": 24,
+          "byte_count": 730.0
+        }
+      },
+      "app.js": {
+        "path": "/Edlaine-Pontes/Forkids/blob/main/src/app.js",
+        "row_count": 19,
+        "byte_count": 405.0
+      }
+    },
+    ".env.example": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/.env.example",
+      "row_count": 1,
+      "byte_count": 15.0
+    },
+    ".gitignore": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/.gitignore",
+      "row_count": 104,
+      "byte_count": 1570.0
+    },
+    "Procfile": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/Procfile",
+      "row_count": 1,
+      "byte_count": 14.0
+    },
+    "README.md": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/README.md",
+      "row_count": 217,
+      "byte_count": 7280.0
+    },
+    "package-lock.json": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/package-lock.json",
+      "row_count": 1928,
+      "byte_count": 75200.0
+    },
+    "package.json": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/package.json",
+      "row_count": 31,
+      "byte_count": 740.0
+    },
+    "server.js": {
+      "path": "/Edlaine-Pontes/Forkids/blob/main/server.js",
+      "row_count": 8,
+      "byte_count": 193.0
+    }
+  }

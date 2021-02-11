@@ -4,6 +4,11 @@ import queue
 from threading import Thread
 import time
 import json
+import requests
+
+path = open('repositories.txt', 'r')
+    
+print('analisando os dados...')
 
 def convert_row_count(row_count):  
     try:
@@ -42,10 +47,11 @@ def get_file_details(text):
     elif len(items) == 2:
         row_count = items[0].strip()
         byte_count = items[1].strip()
+        
     
     row_count = convert_row_count(row_count)
     byte_count = convert_size(byte_count)
-
+    
     return row_count, byte_count
 
 def process_file(path): 
@@ -59,7 +65,7 @@ def process_file(path):
     value = {         
         'path': path,
         'row_count': row_count,
-        'byte_count': byte_count,
+        'byte_count': byte_count
     }
 
     return value
@@ -96,7 +102,11 @@ def process_url(path):
     return output
 
 
-#tree = process_url('vivadecora/desafio-backend-trabalhe-conosco')
-tree = process_url('NahLima/Api-PetFriendly')
-#tree = process_url('Edlaine-Pontes/Forkids')
-print(json.dumps(tree, indent = 2)) # aparece no console
+tree = process_url('path') 
+#print(json.dumps(tree, indent = 2)) # aparece apenas no console
+
+#exporta um arquivo txt
+with open('repositoriesExport.txt', 'w') as file:
+    for valor in (json.dumps(tree, indent = 2)):
+        file.write(str(valor))
+

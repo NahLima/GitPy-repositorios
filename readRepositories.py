@@ -6,9 +6,12 @@ import time
 import json
 import requests
 
+
     
 print('analisando os dados...')
+print('Pode demorar um pouco...')
 
+#numero de linhas
 def convert_row_count(row_count):  
     try:
         if row_count is not None:
@@ -18,6 +21,7 @@ def convert_row_count(row_count):
 
     return row_count    
 
+# tamanho dos arquivos --> deixando todos no mesmo padrao
 def convert_size(byte_count):
     items = byte_count.split(' ')
 
@@ -31,6 +35,7 @@ def convert_size(byte_count):
     
     return size
 
+# retorna uma tupla com dois valores 
 def get_file_details(text):
     items = text.strip().split('\n')
 
@@ -60,7 +65,8 @@ def process_file(path):
     
     text = bs.find('div', class_='text-mono').text
     row_count, byte_count = get_file_details(text)
-    
+
+#dicionario
     value = {         
         'path': path,
         'row_count': row_count,
@@ -100,9 +106,13 @@ def process_url(path):
 
     return output
 
+## aqui é onde coloco o endereço do repositório 
+tree = process_url('vivadecora/desafio-backend-trabalhe-conosco') 
 
-tree = process_url('NahLima/Api-PetFriendly') 
-#print(json.dumps(tree, indent = 2)) # aparece apenas no console
+
+
+#aparece apenas no console
+#print(json.dumps(tree, indent = 2)) 
 
 #exporta um arquivo txt
 with open('repositoriesExport.txt', 'w') as file:

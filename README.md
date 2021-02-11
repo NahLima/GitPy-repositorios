@@ -2,9 +2,8 @@
 #desafio
 
 ------------------------
-O arquivo **repositories.txt** é onde coloco os repositórios analisados do GitHub. 
 
-Export dos arquivo  com as informações referentes aos repositórios ficam salvos como **repositoriesExport.txt**
+O Export dos arquivo  com as informações referentes aos repositórios ficam salvos como **repositoriesExport.txt**
 
 # Ferramentas
 - pyhton 
@@ -38,7 +37,7 @@ S
 // para confirmar
 ````
 
-Vai até o nodeJs e ative o ambiente com o comando citado acima. 
+Vai até o nodejs e ative o ambiente com o comando citado acima. 
 
 
 # 2. Instalando as dependências
@@ -54,4 +53,24 @@ pip install -r requirements.txt
 python readRepositories.py
 
 // ou dar o comando CTRL+ ALT + N no arquivo readRepositoriesV2.py
+````
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+# Pontos a melhorar
+
+- Fazer com que o código pegue uma lista de repositórios e export o resultado cada um individualmente. 
+
+- Melhorar a performance 
+
+- Fazer calculo por extensão de arquivo
+
+
+# Observação
+
+Para testar com outros repositórios basta mudar o endereço que está na linha 110 do **readRepository.py**
+
+````javascript
+tree = process_url('vivadecora/desafio-backend-trabalhe-conosco') 
 ````

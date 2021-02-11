@@ -6,7 +6,8 @@ import time
 import json
 import requests
 
-
+print('Hello, world!')
+    
     
 print('analisando os dados...')
 print('Pode demorar um pouco...')

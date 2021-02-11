@@ -6,7 +6,6 @@ import time
 import json
 import requests
 
-path = open('repositories.txt', 'r')
     
 print('analisando os dados...')
 

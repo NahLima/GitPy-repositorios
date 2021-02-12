@@ -7,7 +7,7 @@ O Export do arquivo  com as informações referente ao repositório fica salvo c
 
 Tem um arquivo já exportado como exemplo de como ficaria, no caso alterei o nome desse exemplo para não gerar conflito. Ele está como exportRepositoryVivaDecora.txt 
 
-No console quando estiver fazendo a leitura dos dados vai aparecer Hello 
+No console quando estiver fazendo a leitura dos dados vai aparecer 
 ````
 Hello World
 analisando os dados...

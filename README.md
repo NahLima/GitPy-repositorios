@@ -3,7 +3,17 @@
 
 ------------------------
 
-O Export dos arquivo  com as informações referentes aos repositórios ficam salvos como **repositoriesExport.txt**
+O Export do arquivo  com as informações referente ao repositório fica salvo como **exportRepository.txt** 
+
+Tem um arquivo já exportado como exemplo de como ficaria, no caso alterei o nome desse exemplo para não gerar conflito. Ele está como exportRepositoryVivaDecora.txt 
+
+No console quando estiver fazendo a leitura dos dados vai aparecer Hello 
+````
+Hello World
+analisando os dados...
+Pode demorar um pouco...
+Gerando arquivo txt
+````
 
 # Ferramentas
 - pyhton 
@@ -12,7 +22,7 @@ O Export dos arquivo  com as informações referentes aos repositórios ficam sa
 - conda
 
 # 1. Ambiente virtual
-Usei o ambiente virtual dentro do Node.js (windows). Para isso digite o comando na pasta do projeto 
+Usei o ambiente virtual dentro do VisualCode (windows). Para isso digite o comando na pasta do projeto 
 
 ````javascript
 python -m venv " + o nome do ambiente"
@@ -63,7 +73,7 @@ python execute.py
 
 - Melhorar a performance 
 
-- exportar os arquivos txt
+- exportar de forma mais inteligente os arquivos txt
 
 
 # Observação
@@ -73,9 +83,16 @@ código **execute.py**
 
 ````javascript
 //exemplo 
-    tree = process_url('NahLima/API-REST---EXPRESS---MYSQL-')
-    generate_report('NahLima/API-REST---EXPRESS---MYSQL-', tree)
+    tree = process_url('NahLima/API-REST---EXPRESS---MYSQL-')  // aqui 
+    generate_report('NahLima/API-REST---EXPRESS---MYSQL-', tree) // e aqui
 ````
-ele vai retornar no console:
+Para retornar no console é só deixar comentado as linhas 6 e 14 do arquivo **execute.py**
 
+```` javascripit
+//deixar comentado essas duas linhas
+
+sys.stdout = open("exportRepository.txt", "w") 
+sys.stdout.close()
+
+````
 ![imagem-console](./img/console.JPG)

@@ -6,6 +6,8 @@ import time
 
 print('Hello World')
 print('analisando os dados...')
+print('Pode demorar um pouco...')
+print('Gerando arquivo txt')
 
 #numero de linhas
 def convert_row_count(row_count):

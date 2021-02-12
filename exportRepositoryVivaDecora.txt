@@ -1,0 +1,18 @@
+process_url  - vivadecora/desafio-backend-trabalhe-conosco
+process_file - /vivadecora/desafio-backend-trabalhe-conosco/blob/main/README.md
+process_file - /vivadecora/desafio-backend-trabalhe-conosco/blob/main/vivadecora-logo.svg
+
+Total de linhas: 117
+Total de bytes : 8970.0
+
+|-------------------------------------------------------------------|
+| Extensão      |         Linhas          |          Bytes          |
+|---------------|-------------------------|-------------------------|
+| md            |           105 (89.74 %) |        5750.0 (64.10 %) |
+| svg           |            12 (10.26 %) |        3220.0 (35.90 %) |
+|-------------------------------------------------------------------|
+
+[vivadecora/desafio-backend-trabalhe-conosco]
+|__ [README.md]
+|__ [vivadecora-logo.svg]
+

@@ -50,27 +50,32 @@ pip install -r requirements.txt
 # 3. Testando a aplicação
 
 ````javascript
-python readRepositories.py
+python execute.py  
 
-// ou dar o comando CTRL+ ALT + N no arquivo readRepositoriesV2.py
+// ou dar o comando CTRL+ ALT + N no arquivo execute.py
 ````
 
-
-------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 # Pontos a melhorar
 
-- Fazer com que o código pegue uma lista de repositórios e export o resultado cada um individualmente. 
+- Fazer com que o código pegue uma lista de repositórios e exporte cada resultado  individualmente. 
 
 - Melhorar a performance 
 
-- Fazer calculo por extensão de arquivo
+- exportar os arquivos txt
 
 
 # Observação
 
-Para testar com outros repositórios basta mudar o endereço que está na linha 110 do **readRepository.py**
+Para testar com outros repositórios basta mudar o endereço que está no 
+código **execute.py**
 
 ````javascript
-tree = process_url('vivadecora/desafio-backend-trabalhe-conosco') 
+//exemplo 
+    tree = process_url('NahLima/API-REST---EXPRESS---MYSQL-')
+    generate_report('NahLima/API-REST---EXPRESS---MYSQL-', tree)
 ````
+ele vai retornar no console:
+
+![imagem-console](./img/console.JPG)

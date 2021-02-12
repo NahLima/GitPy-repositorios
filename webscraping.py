@@ -3,22 +3,16 @@ from bs4 import BeautifulSoup
 import queue
 from threading import Thread
 import time
-import json
-import requests
 
-print('Hello, world!')
-    
-    
+print('Hello World')
 print('analisando os dados...')
-print('Pode demorar um pouco...')
 
 #numero de linhas
-def convert_row_count(row_count):  
+def convert_row_count(row_count):
     try:
-        if row_count is not None:
-            row_count = int(row_count.split(' ')[0].strip())
+        row_count = int(row_count.split(' ')[0].strip())
     except ValueError:
-        row_count = None
+        row_count = 0
 
     return row_count    
 
@@ -36,6 +30,7 @@ def convert_size(byte_count):
     
     return size
 
+
 # retorna uma tupla com dois valores 
 def get_file_details(text):
     items = text.strip().split('\n')
@@ -44,34 +39,33 @@ def get_file_details(text):
         if item.strip() == '' or item.strip() == 'executable file':
             items.remove(item)
 
-    row_count = None
-    byte_count = None
+    row_count = ''
+    byte_count = ''
     
     if len(items) == 1:
         byte_count = items[0].strip()
     elif len(items) == 2:
         row_count = items[0].strip()
         byte_count = items[1].strip()
-        
     
     row_count = convert_row_count(row_count)
     byte_count = convert_size(byte_count)
-    
+
     return row_count, byte_count
 
-def process_file(path): 
+def process_file(path):
     print('process_file - ' + path)
     html = urlopen('https://github.com/' + path)
     bs = BeautifulSoup(html, 'lxml')
     
     text = bs.find('div', class_='text-mono').text
     row_count, byte_count = get_file_details(text)
-
-#dicionario
+    
+    #dicionario
     value = {         
         'path': path,
         'row_count': row_count,
-        'byte_count': byte_count
+        'byte_count': byte_count,
     }
 
     return value
@@ -107,16 +101,4 @@ def process_url(path):
 
     return output
 
-## aqui é onde coloco o endereço do repositório 
-tree = process_url('vivadecora/desafio-backend-trabalhe-conosco') 
-
-
-
-#aparece apenas no console
-#print(json.dumps(tree, indent = 2)) 
-
-#exporta um arquivo txt
-with open('repositoriesExport.txt', 'w') as file:
-    for valor in (json.dumps(tree, indent = 2)):
-        file.write(str(valor))
 

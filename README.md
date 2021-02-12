@@ -1,13 +1,13 @@
-# GitPy-repositorios
+# GitPy-repositórios
 #desafio
 
 ------------------------
 
-O Export do arquivo  com as informações referente ao repositório fica salvo como **exportRepository.txt** 
+O Export do arquivo  com a informação referente ao repositório fica salvo como **exportRepository.txt** 
 
-Tem um arquivo já exportado como exemplo de como ficaria, no caso alterei o nome desse exemplo para não gerar conflito. Ele está como exportRepositoryVivaDecora.txt 
+Há um arquivo já exportado como exemplo de como ficaria. No caso, alterei o nome deste exemplo para não gerar conflito. O nome do arquivo é **exportRepositoryVivaDecora.txt** 
 
-No console quando estiver fazendo a leitura dos dados vai aparecer 
+Ao iniciar a aplicação, será possível ler no console: 
 ````
 Hello World
 analisando os dados...
@@ -16,28 +16,28 @@ Gerando arquivo txt
 ````
 
 # Ferramentas
-- pyhton 
-- studio visual code
+- python 
+- visual studio code
 - ambiente virtual (venv)  
 - conda
 
 # 1. Ambiente virtual
-Usei o ambiente virtual dentro do VisualCode (windows). Para isso digite o comando na pasta do projeto 
+Usei o ambiente virtual dentro do Visual Studio Code (windows). Para isso, digite o comando na pasta do projeto:
 
 ````javascript
 python -m venv " + o nome do ambiente"
 
-/* na sequencia precisamos ativar o ambiente digite o código */
+/* na sequência precisamos ativar o ambiente digite o código */
 
 .\"nome do ambiente"\Scripts\Activate.ps1 
 
 /* usamos ps1 porque estamos no powershell 
- se der um erro no seu powershell é porque ele é restrito por 
-padrão, então vamos precisar destravar ele.*/
+ se der um erro no seu powershell, é porque ele é restrito por 
+padrão, então vamos precisar destrava-lo */
 
 ````
 
-No windowsPowerShell (admin) e digite o comando 
+No windowsPowerShell (admin), digite o comando :
 ````javascript
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned 
 ````
@@ -47,7 +47,7 @@ S
 // para confirmar
 ````
 
-Vai até o nodejs e ative o ambiente com o comando citado acima. 
+Vá até o terminal do Visual Studio Code e ative o ambiente com o comando citado acima. 
 
 
 # 2. Instalando as dependências
@@ -69,16 +69,16 @@ python execute.py
 
 # Pontos a melhorar
 
-- Fazer com que o código pegue uma lista de repositórios e exporte cada resultado  individualmente. 
+- Fazer com que o código busque uma lista de repositórios e exporte cada resultado  individualmente. 
 
 - Melhorar a performance 
 
-- exportar de forma mais inteligente os arquivos txt
+- Exportar de forma mais inteligente os arquivos txt
 
 
 # Observação
 
-Para testar com outros repositórios basta mudar o endereço que está no 
+Para testar com outros repositórios, basta mudar o endereço que está no 
 código **execute.py**
 
 ````javascript
@@ -86,10 +86,10 @@ código **execute.py**
     tree = process_url('NahLima/API-REST---EXPRESS---MYSQL-')  // aqui 
     generate_report('NahLima/API-REST---EXPRESS---MYSQL-', tree) // e aqui
 ````
-Para retornar no console é só deixar comentado as linhas 6 e 14 do arquivo **execute.py**
+Para retornar no console, é só deixar comentadas as linhas 6 e 14 do arquivo **execute.py**
 
 ```` javascripit
-//deixar comentado essas duas linhas
+//deixar comentadas essas duas linhas
 
 sys.stdout = open("exportRepository.txt", "w") 
 sys.stdout.close()
